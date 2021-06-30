@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;    
+}
+
+.main-section {
+    background-color: #f3eed9;
+}
+
+.container {
+    max-width: 1128px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    position: relative;
+    top: 6rem;
+}
+
+.hero-title,
+.main-paragraph {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-paragraph {
+    font-size: 6rem;
+    width: 73%;
+    text-align: center;
+}
+
+.hero-paragraph,
+.main-title,
+.gallery-title {
+    color: #824936;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15em 0;
+}
+
+.main-title,
+.gallery-title {
+    font-size: 3.6rem;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-paragraph,
+.gallery-paragraph {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.main-paragraph {
+    width: 50%;
+    line-height: 1.5;    
+}
+
+.gallery-title {
+    color: #f3eed9;
+    margin: 0;    
+}
+
+.gallery-item-1,
+.gallery-item-2,
+.other-section {
+    padding: 10em 0;
+}
+
+.gallery-paragraph {
+    color: #fff;
+}
+
+.gallery-text {
+    width: 50%;     
+}
+
+.gallery-section-1 {
+    background-color: #222c2a;
+}
+
+.gallery-section-2 {
+    background-color: #824936;
+}
+.image-container {
+    margin-left: 4em;
+    margin-right: 4em;   
+}
+
+@media(max-width: 750px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .hero-paragraph {
+        font-size: 5rem;
+    }
+    .hero-title, 
+    .main-paragraph, 
+    .gallery-paragraph,
+    .gallery-title {
+        text-align: center;
+    }
+
+    .main-paragraph,
+    .gallery-text {
+        width: 100%;
+    }
+    .image-container {
+        margin: 2.5em 0;
+    }
+}
